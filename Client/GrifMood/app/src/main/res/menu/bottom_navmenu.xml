@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/Notes"
+        android:title="Записи"
+        android:icon="@drawable/ic_baseline_edit_note_24"/>
+    <item
+        android:id="@+id/Statistics"
+        android:title="Статистика"
+        android:icon="@drawable/ic_baseline_bar_chart_24" />
+    <item
+        android:id="@+id/NewNote"
+        android:title="Новая запись"
+        android:icon="@drawable/plus" />
+    <item
+        android:id="@+id/Date"
+        android:title="Календарь"
+        android:icon="@drawable/ic_baseline_event_24"/>
+
+    <item
+        android:id="@+id/Test"
+        android:title="Тесты"
+        android:icon="@drawable/test"/>
+</menu>

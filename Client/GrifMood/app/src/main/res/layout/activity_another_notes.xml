@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/teal_phone"
+    tools:context=".AnotherNotesActivity">
+
+    <RelativeLayout
+        android:id = "@+id/toolBarRl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_toolbar02">
+
+
+
+        <TextView
+            android:id="@+id/name_test"
+            android:layout_centerVertical="true"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+
+
+        <ImageButton
+            android:id="@+id/logOut"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_logout"
+            android:text="logout"
+            android:layout_marginEnd="10dp" />
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sloii"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginEnd="9dp"
+        android:layout_below="@id/toolBarRl"
+        android:background="@drawable/shape_sovet"
+        >
+
+        <EditText
+            android:id="@+id/descriptionText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Опишите свой совет ..."
+            android:layout_marginTop="10dp"
+            android:layout_centerVertical="false"
+            android:inputType="textCapSentences|textMultiLine"
+            android:singleLine="false"
+            android:text=""
+            android:textColorHint="@color/teal_700"
+            android:fontFamily="serif"
+            android:textColor="@color/teal_700"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="60dp"
+            />
+
+        <Button
+            android:id="@+id/btnSend"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/descriptionText"
+            android:backgroundTint="@color/colorPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="Отправить" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/sloii"
+        android:id="@+id/pagerRelative"
+
+        >
+
+        <androidx.viewpager.widget.ViewPager
+
+
+            android:id="@+id/viewPagerAnotherNotes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="-1dp">
+
+
+        </androidx.viewpager.widget.ViewPager>
+
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">GrifMood</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="IP">http://192.168.1.36</string>
+    <array name="testname">
+        <item>Шкала тревоги Бека</item>
+        <item>Шкала депрессии Цунга</item>
+        <item>Экспресс-диагностика невроза</item>
+        <item>Тест Холла</item>
+        <item>Шкала созависимости Уайнхолд</item>
+        <item>Тип восприятия по С.Ефремцеву</item>
+    </array>
+    <string name="testDes">описание ко всем элементам</string>
+    <string-array name="choice_items">
+        <item>Телефоны горячей линии</item>
+        <item>Онлайн-сервисы</item>
+    </string-array>
+
+    <string name="material_calendar_monday">Пн</string>
+    <string name="material_calendar_tuesday">Вт</string>
+    <string name="material_calendar_wednesday">Ср</string>
+    <string name="material_calendar_thursday">Чт</string>
+    <string name="material_calendar_friday">Пт</string>
+    <string name="material_calendar_saturday">Сб</string>
+    <string name="material_calendar_sunday">Вс</string>
+
+    <array name="material_calendar_months_array">
+        <item>Январь</item>
+        <item>Февраль</item>
+        <item>Март</item>
+        <item>Апрель</item>
+        <item>Май</item>
+        <item>Июнь</item>
+        <item>Июль</item>
+        <item>Август</item>
+        <item>Сентябрь</item>
+        <item>Октбярь</item>
+        <item>Ноябрь</item>
+        <item>Декабрь</item>
+    </array>
+
+    <string name="material_calendar_today_button">Сегодня</string>
+    <string name="material_calendar_positive_button">ОК</string>
+    <string name="material_calendar_negative_button">Отмена</string>
+</resources>

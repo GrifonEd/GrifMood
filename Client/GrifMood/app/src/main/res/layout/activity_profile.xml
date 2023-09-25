@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity"
+    android:background="#E8FFF5"
+    >
+
+    <View
+        android:id="@+id/beaty"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="0dp">
+
+
+    </View>
+
+    <RelativeLayout
+        android:id="@+id/toolBarRl"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+
+        android:background="@drawable/shape_toolbar02"
+        tools:ignore="MissingConstraints">
+
+
+        <ImageButton
+            android:background="@android:color/transparent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:id="@+id/backBtn"
+            android:src="@drawable/ic_back"
+            android:layout_centerVertical="true">
+
+        </ImageButton>
+
+        <TextView
+            android:id="@+id/titleTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="serif"
+            android:text="Поддержка"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"></TextView>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/offsystem"
+            android:src="@drawable/ic_logout"
+            android:layout_marginEnd="10dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:background="@android:color/transparent">
+
+        </ImageButton>
+
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/anotherProfile"
+            android:src="@drawable/ic_pers_connection"
+            android:layout_marginEnd="44dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:background="@android:color/transparent">
+
+        </ImageButton>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/beaty"
+        android:layout_marginTop="-30dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nameTv"
+        android:layout_marginTop="45dp"
+        android:layout_centerHorizontal="true"
+        android:text="QR-код для приглашения:"
+        android:textAlignment="center"
+        android:fontFamily="serif"
+        android:textColor="@color/teal_700"
+        android:textSize="20sp"
+        android:textStyle="bold">
+
+    </TextView>
+    <com.google.android.material.imageview.ShapeableImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/QRcode"
+        android:layout_below="@id/toolBarRl"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/shape_edittext01"
+        >
+
+
+
+    </com.google.android.material.imageview.ShapeableImageView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/invisibleText"
+        android:layout_below="@id/toolBarRl"
+        android:text="отсканировано"
+        android:visibility="invisible"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="false"
+        android:textSize="18sp"
+        android:textColor="@color/black"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/beaty"
+        android:layout_marginTop="-20dp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/LayoutnameTv">
+
+    </RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/emailTv"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/LayoutnameTv"
+        android:text="Пароль:"
+        android:fontFamily="serif"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:textColor="@color/teal_700"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/uuid_profile"
+        android:layout_below="@id/emailTv"
+        android:text="Здесь uuid..."
+        android:layout_centerHorizontal="true"
+        android:textSize="18sp"
+        android:textColor="@color/black"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_scan"
+        android:layout_below="@id/uuid_profile"
+        android:text="Сканирование QR-кода\nдругого пользователя"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:backgroundTint="@color/colorPrimary"
+        android:layout_marginTop="10dp"
+       />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_scan"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:id="@+id/linearData"
+        android:layout_weight="1"
+        android:orientation="vertical"/>
+
+
+
+
+
+
+
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPagerMessage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linearData"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="30dp"
+
+        />
+
+
+
+</RelativeLayout>

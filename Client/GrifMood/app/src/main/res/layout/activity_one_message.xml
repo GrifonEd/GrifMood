@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    tools:context=".RowOneMessage"
+    app:cardElevation="8dp"
+    app:cardBackgroundColor="@color/teal_phone"
+    app:cardCornerRadius="5dp"
+    app:contentPadding="5dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:minHeight="75dp"
+        android:layout_margin="10dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="9dp"
+        app:cardCornerRadius="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:id="@+id/relativeWork"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="10dp"
+
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/shape_for_scroll">
+
+            <TextView
+                android:id="@+id/textFIO"
+                android:gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:fontFamily="serif"
+                android:text="Пользователь Хаванова Оля"
+                android:textColor="@color/teal_700"
+                android:textSize="18sp"
+
+
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/textofrecomm"
+                android:layout_below="@+id/textFIO"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="0dp"
+                android:fontFamily="serif"
+                android:text="22.08.23   23:15:05"
+                android:textColor="@color/teal_700"
+                android:textSize="16sp"
+
+
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/deleteMessage"
+                android:layout_marginTop="3dp"
+                android:layout_alignParentEnd="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_delete"
+                android:text="logout"
+                android:layout_marginEnd="3dp">
+            </ImageButton>
+
+            <TextView
+                android:id="@+id/numberMessage"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="3dp"
+                android:fontFamily="serif"
+                android:text="1."
+                android:textColor="@color/teal_700"
+                android:textSize="18sp"
+
+
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/messageText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textofrecomm"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="-1dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="serif"
+                android:text="1) ...."
+                android:textColor="@color/teal_700"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
+

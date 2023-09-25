@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AnotherProfileActivity">
+
+    <RelativeLayout
+        android:id = "@+id/toolBarRl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@drawable/shape_toolbar02">
+
+
+
+        <TextView
+            android:id="@+id/name_test"
+            android:layout_centerVertical="true"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+
+
+        <ImageButton
+            android:id="@+id/logOut"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_logout"
+            android:text="logout"
+            android:layout_marginEnd="10dp" />
+
+
+    </RelativeLayout>
+
+
+    <androidx.viewpager.widget.ViewPager
+
+
+        android:id="@+id/viewPagerProfiles"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolBarRl"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="-1dp">
+
+
+    </androidx.viewpager.widget.ViewPager>
+
+</RelativeLayout>

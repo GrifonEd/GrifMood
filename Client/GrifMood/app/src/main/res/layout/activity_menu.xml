@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuActivity"
+    android:id = "@+id/all"
+    >
+
+    <RelativeLayout
+        android:id = "@+id/toolBarRl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_toolbar02"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sound"
+            android:layout_centerVertical="true"
+
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:background="@color/colorPrimary"
+            android:src="@drawable/ic_baseline_mic_24"
+            android:gravity="center"
+            >
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/sound"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:src="@drawable/info_24"
+            tools:ignore="SpeakableTextPresentCheck"></ImageButton>
+
+        <TextView
+            android:id="@+id/mikrofonVvod"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint=""
+            android:inputType="textCapSentences|textMultiLine"
+            android:singleLine="false"
+            android:text="Нажми для ввода"
+            android:gravity="center"
+            android:layout_toStartOf="@id/logOut"
+            android:textColorHint="@color/teal_700"
+            android:fontFamily="serif"
+            android:visibility="gone"
+            android:textColor="@color/teal_700"
+            android:textSize="24sp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_centerHorizontal="true"
+
+            />
+
+        <ImageButton
+            android:id="@+id/logOut"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_logout"
+            android:text="logout"
+            android:layout_marginEnd="10dp">
+        </ImageButton>
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/telephone"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="40dp"
+            android:background="@color/colorPrimary"
+            android:src="@drawable/ic_calling"
+            >
+        </ImageButton>
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/account"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="73dp"
+                android:background="@color/colorPrimary"
+                android:src="@drawable/ic_account_white"
+                >
+            </ImageButton>
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+    <FrameLayout
+        android:id="@+id/frame_layout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_below="@+id/toolBarRl"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+        app:layout_constraintTop_toBottomOf="@+id/toolBarRl"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        >
+
+
+
+    </FrameLayout>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@color/colorPrimary"
+        app:itemIconTint="@color/white"
+        app:itemTextColor="@color/white"
+        app:menu="@menu/bottom_navmenu"
+        app:labelVisibilityMode="labeled"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
